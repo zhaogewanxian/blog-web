@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+    <title>摇滚时刻笔记,rockrolltime</title>
+</head>
+<body id="blog">
+<!-- content srart -->
+<div class="am-modal am-modal-alert" tabindex="-1" id="http-err-modal">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">error</div>
+        <div class="am-modal-bd">
+            不要意思，网络好像出现了一点问题，请稍后重试!
+        </div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn">关闭</span>
+        </div>
+    </div>
+</div>
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-modal-qq">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">Contact ME</div>
+        <div class="am-modal-bd">
+            QQ号码:&nbsp;&nbsp;<span>449244549</span>
+        </div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn">关闭</span>
+        </div>
+    </div>
+</div>
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-modal-phone">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">Contact ME</div>
+        <div class="am-modal-bd">
+            手机号码:15578763070
+        </div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn">关闭</span>
+        </div>
+    </div>
+</div>
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-modal-wx">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd"> 微信号:15578763070
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <span></span>
+        <div class="am-modal-bd">
+            <img src="/assets/i/wxCode.png" alt="">
+        </div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn">关闭</span>
+        </div>
+    </div>
+</div>
+
+<div class="blog-sidebar-widget blog-bor" id="mineInfoData">
+</div>
+<div class="blog-sidebar-widget blog-bor">
+    <h2 class="blog-text-center blog-title"><span>Contact ME</span></h2>
+    <p>
+        <a href="javascript:void(0)"><span class="am-icon-qq am-icon-fw am-primary blog-icon"
+                                           data-am-modal="{target: '#my-modal-qq'}"></span></a>
+        <a href="javascript:void(0)"><span class="am-icon-weixin am-icon-fw blog-icon"
+                                           data-am-modal="{target: '#my-modal-wx'}"></span></a>
+        <a href="javascript:void(0)"><span class="am-icon-mobile-phone am-icon-fw blog-icon"
+                                           data-am-modal="{target: '#my-modal-phone'}"></span></a>
+    </p>
+</div>
+<div class="blog-clear-margin blog-sidebar-widget blog-bor am-g ">
+    <h2 class="blog-title"><span>TAG cloud</span></h2>
+    <div class="am-u-sm-12 blog-clear-padding">
+        <div id="tagListData">
+        </div>
+    </div>
+</div>
+<div class="blog-sidebar-widget blog-bor">
+    <h2 class="blog-title"><span>来喂</span></h2>
+    <ul class="am-list">
+        <li><a href="javascript:void(0)">不要和我说什么市场、客户、竞品、功能、需求、用户体验、生命周期、技术难点，老夫做产品就是抄，一起抄！</a></li>
+        <li><a href="javascript:void(0)">不要给我说什么风格、重心比例、设计原理、VI理论、UI界面，老夫做设计就是一把梭，打开浏览器就是干!</a></li>
+        <li><a href="javascript:void(0)">不要和我说什么vue、react、ES6、webpack、Browser、angular、async、Typescript、Promise，老夫写代码就是用JQuery!</a>
+        </li>
+        <li><a href="javascript:void(0)">不要和我说什么底层原理、框架内核！老夫敲后台代码就是一把梭，拿起键盘复制、粘贴就是干！</a></li>
+        <li><a href="javascript:void(0)">不要和我说什么自动化管理分布式集群，数据库有问题drop库重建，数据表有问题就drop表重建，管他什么ORACLE、MySql、NoSQL、Redis、Mongodb,能手打的要什么可视化，服务挂掉重启，网络挂掉重启，机器挂掉重启，老夫做运维就是一把梭，连环境带系统rm-rf就是干！</a>
+        </li>
+    </ul>
+</div>
+
+<script id="tagTemplate" type="text/x-dot-template">
+    {{ for(var prop in it) { }}
+    <a class="blog-tag">{{= it[prop].name }}</a>
+    {{ } }}
+</script>
+<script id="mineInfoTemplate" type="text/x-dot-template">
+    <h2 class="blog-text-center blog-title"><span>About ME</span></h2>
+    <img src="{{=it.imgSrc}}" alt="about me" class="blog-entry-img">
+    <p>{{=it.userName}}</p>
+    <p>{{=it.introduce}}</p>
+</script>
+<script src="/auth/js/side.js"></script>
+</body>
+</html>

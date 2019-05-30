@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="摇滚时刻笔记,rockrolltime">
+    <meta name="keywords" content="摇滚时刻笔记,rockrolltime">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>摇滚时刻笔记,rockrolltime</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="/assets/i/favicon.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="/assets/i/favicon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="rockrolltime"/>
+    <link rel="apple-touch-icon-precomposed" href="/images/rockroll2.png">
+    <meta name="msapplication-TileImage" content="/images/rockroll2.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="/assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/amazeui.videojs.css"/>
+</head>
+
+<body id="blog-article-sidebar">
+<!-- header start -->
+<header class="am-g am-g-fixed blog-fixed blog-text-center blog-header">
+    <div class="am-u-sm-8 am-u-sm-centered">
+        <img width="200" src="http://p6lfxxq4c.bkt.clouddn.com/rockroll2.png" alt="rockrolltimelogo"/>
+        <h2 class="am-hide-sm-only">摇滚时刻笔记</h2>
+    </div>
+</header>
+<!-- header end -->
+<hr>
+<!--模态弹窗 start-->
+<!--<div class="am-alert" data-am-alert  id="my-alert-tips">-->
+<!--<button type="button" class="am-close">捏捏捏，乱填写什么东西哦</button>-->
+<!--</div>-->
+<!--模态弹窗 end-->
+<!-- nav start -->
+<!--模态弹窗 start-->
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-modal-alert">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">tips</div>
+        <div class="am-modal-bd">
+            sorry，该模块程序猿小哥哥还在拼命开发中，敬请期待~
+        </div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn">关闭</span>
+        </div>
+    </div>
+</div>
+<!--模态弹窗 end-->
+<nav class="am-g am-g-fixed blog-fixed blog-nav">
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only blog-button"
+            data-am-collapse="{target: '#blog-collapse'}"><span class="am-sr-only">导航切换</span> <span
+            class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="blog-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li><a href="/web/index">首页</a></li>
+            <li class="am-dropdown" data-am-dropdown>
+                <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                    首页布局 <span class="am-icon-caret-down"></span>
+                </a>
+                <ul class="am-dropdown-content">
+                    <ul class="am-dropdown-content">
+                        <li><a href="/web/nosidebar">1. index-nosidebar</a></li>
+                        <li><a href="/web/center">2. index-center</a></li>
+                    </ul>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0)" data-am-modal="{target: '#my-modal-alert'}">代码记录</a></li>
+            <li><a href="javascript:void(0)" data-am-modal="{target: '#my-modal-alert'}">简历相关</a></li>
+            <li><a href="/web/photoList">图片库</a></li>
+            <li><a href="/web/videoList">存档</a></li>
+            <li class="am-active"><a href="javascript:void(0)">存档详情</a></li>
+        </ul>
+        <!--<form class="am-topbar-form am-topbar-right am-form-inline" role="search">-->
+        <!--<div class="am-form-group">-->
+        <!--<input type="text" class="am-form-field am-input-sm" placeholder="搜索">-->
+        <!--</div>-->
+        <!--</form>-->
+    </div>
+</nav>
+
+<!-- nav end -->
+<hr>
+<!-- content srart -->
+<div class="am-g am-g-fixed blog-fixed blog-content">
+
+
+    <div class="am-u-md-8 am-u-sm-12">
+
+        <article class="am-g blog-entry-article">
+            <div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-text">
+                <span>温馨提示：请在wifi的环境下观看，土豪请随意</span>
+            </div>
+        </article>
+        <div id="videoInfoData"></div>
+
+        <hr>
+    </div>
+
+</div>
+<!-- content end -->
+
+
+<footer class="blog-footer" id="footer">
+</footer>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="/assets/js/baidu.jquery.min.js"></script>
+<script src="/assets/js/modernizr.js"></script>
+<script src="/assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="/assets/js/amazeui.min.js"></script>
+<script src="/assets/js/doT.js"></script>
+<script src="/assets/js/video.js"></script>
+<script src="/auth/js/videoInfo.js"></script>
+<!-- <script src="assets/js/app.js"></script> -->
+<script id="videoInfoTemplate" type="text/x-dot-template">
+    <article class="am-article blog-article-p">
+        <div class="am-article-hd">
+            <h1 class="am-article-title blog-text-center">{{=it.title}}</h1>
+            <p class="am-article-meta blog-text-center">
+                <span><a href="#" class="blog-color">record &nbsp;</a></span>-
+                <span><a href="#">@{{= it.createName }} &nbsp;</a></span>-
+                <span><a href="#">{{=it.recordTime}}</a></span>
+            </p>
+        </div>
+        <div class="am-article-bd">
+            <p class="class=" am-article-lead>
+                intro ： </p>
+            <blockquote><p>{{=it.content}}</p>
+            </blockquote>
+            <p>
+                坐标： </p>
+            <blockquote><p>{{=it.site}}</p>
+            </blockquote>
+            <p>
+                <video id="videoInfo" class="blog-entry-img blog-article-margin" controls preload="none"
+                       data-setup="{}">
+                    <source src="{{=it.url}}" type="video/mp4">
+                </video>
+            </p>
+            </p>
+        </div>
+    </article>
+    <hr>
+    <form class="am-form am-g">
+        <h3 class="blog-comment">评论</h3>
+        <fieldset>
+            <div class="am-form-group am-u-sm-4 blog-clear-left">
+                <input type="text" id="name" class="" placeholder="名字">
+            </div>
+            <div class="am-form-group am-u-sm-4">
+                <input type="email" id="email" class="" placeholder="邮箱">
+            </div>
+
+            <div class="am-form-group am-u-sm-4 blog-clear-right">
+                <input type="text" id="phone" class="" placeholder="手机号码">
+            </div>
+
+            <div class="am-form-group">
+                <textarea class="" id="content" rows="5" placeholder="一字千金哦"></textarea>
+            </div>
+            <p>
+                <input type="button" class="am-btn am-btn-default" onclick="saveComment()" value="发表评论"/>
+            </p>
+        </fieldset>
+    </form>
+    <hr>
+
+</script>
+
+
+<script type="text/javascript">
+    $(function () {
+        var videoId = '${id}';
+        initVideoInfo(videoId);
+    });
+</script>
+</body>
+</html>

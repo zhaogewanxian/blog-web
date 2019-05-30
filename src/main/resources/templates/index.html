@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="摇滚时刻笔记,rockrolltime">
+    <meta name="keywords" content="摇滚时刻笔记,rockrolltime">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>摇滚时刻笔记,rockrolltime</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="/assets/i/favicon.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="/assets/i/favicon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="rockrolltime"/>
+    <link rel="apple-touch-icon-precomposed" href="/images/rockroll2.png">
+    <meta name="msapplication-TileImage" content="/images/rockroll2.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="/assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+
+<body id="blog">
+
+<header class="am-g am-g-fixed blog-fixed blog-text-center blog-header">
+    <div class="am-u-sm-8 am-u-sm-centered">
+        <img width="200" src="http://p6lfxxq4c.bkt.clouddn.com/rockroll2.png" alt="rockrolltimelogo"/>
+        <h2 class="am-hide-sm-only">摇滚时刻笔记</h2>
+    </div>
+</header>
+<hr>
+<!--模态弹窗 start-->
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-modal-alert">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">tips</div>
+        <div class="am-modal-bd">
+            sorry，该模块程序猿小哥哥还在拼命开发中，敬请期待~
+        </div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn">关闭</span>
+        </div>
+    </div>
+</div>
+<!--模态弹窗 end-->
+<!-- nav start -->
+<nav class="am-g am-g-fixed blog-fixed blog-nav">
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only blog-button"
+            data-am-collapse="{target: '#blog-collapse'}"><span class="am-sr-only">导航切换</span> <span
+            class="am-icon-bars"></span></button>
+    <div class="am-collapse am-topbar-collapse" id="blog-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li class="am-active"><a href="/web/index">首页</a></li>
+            <li class="am-dropdown" data-am-dropdown>
+                <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                    首页布局 <span class="am-icon-caret-down"></span>
+                </a>
+                <ul class="am-dropdown-content">
+                    <li><a href="/web/nosidebar">1. index-nosidebar</a></li>
+                    <li><a href="/web/center">2. index-center</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0)" data-am-modal="{target: '#my-modal-alert'}">代码记录</a></li>
+            <li><a href="javascript:void(0)" data-am-modal="{target: '#my-modal-alert'}">简历相关</a></li>
+            <li><a href="/web/photoList">图片库</a></li>
+            <li><a href="/web/videoList">存档</a></li>
+        </ul>
+        <!--<form class="am-topbar-form am-topbar-right am-form-inline" role="search">-->
+        <!--<div class="am-form-group">-->
+        <!--<input type="text" class="am-form-field am-input-sm" placeholder="搜索">-->
+        <!--</div>-->
+        <!--</form>-->
+    </div>
+</nav>
+<hr>
+<!-- nav end -->
+<!-- banner start -->
+<!--<div class="am-g am-g-fixed blog-fixed am-u-sm-centered blog-article-margin">
+    <div data-am-widget="slider" class="am-slider am-slider-b1" data-am-slider='{&quot;controlNav&quot;:false}'>
+        <ul class="am-slides">
+            <li>
+                <img src="/assets/i/b1.jpg">
+                <div class="blog-slider-desc am-slider-desc ">
+                    <div class="blog-text-center blog-slider-con">
+                        <span><a href="" class="blog-color">Article &nbsp;</a></span>
+                        <h1 class="blog-h-margin"><a href="">总在思考一句积极的话</a></h1>
+                        <p>那时候刚好下着雨，柏油路面湿冷冷的，还闪烁着青、黄、红颜色的灯火。
+                        </p>
+                        <span class="blog-bor">2015/10/9</span>
+                        <br><br><br><br><br><br><br>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="/assets/i/b2.jpg">
+                <div class="am-slider-desc blog-slider-desc">
+                    <div class="blog-text-center blog-slider-con">
+                        <span><a href="" class="blog-color">Article &nbsp;</a></span>
+                        <h1 class="blog-h-margin"><a href="">总在思考一句积极的话</a></h1>
+                        <p>那时候刚好下着雨，柏油路面湿冷冷的，还闪烁着青、黄、红颜色的灯火。
+                        </p>
+                        <span>2015/10/9</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="/assets/i/b3.jpg">
+                <div class="am-slider-desc blog-slider-desc">
+                    <div class="blog-text-center blog-slider-con">
+                        <span><a href="" class="blog-color">Article &nbsp;</a></span>
+                        <h1 class="blog-h-margin"><a href="">总在思考一句积极的话</a></h1>
+                        <p>那时候刚好下着雨，柏油路面湿冷冷的，还闪烁着青、黄、红颜色的灯火。
+                        </p>
+                        <span>2015/10/9</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="/assets/i/b2.jpg">
+                <div class="am-slider-desc blog-slider-desc">
+                    <div class="blog-text-center blog-slider-con">
+                        <span><a href="" class="blog-color">Article &nbsp;</a></span>
+                        <h1 class="blog-h-margin"><a href="">总在思考一句积极的话</a></h1>
+                        <p>那时候刚好下着雨，柏油路面湿冷冷的，还闪烁着青、黄、红颜色的灯火。
+                        </p>
+                        <span>2015/10/9</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>-->
+<!-- banner end -->
+
+<!-- content srart -->
+<div class="am-g am-g-fixed blog-fixed">
+    <div class="am-u-md-8 am-u-sm-12" id="articleListData">
+
+    </div>
+
+    <div class="am-u-md-4 am-u-sm-12 blog-sidebar" id="sideDiv">
+
+    </div>
+</div>
+<!-- content end -->
+<footer class="blog-footer" id="footer">
+
+</footer>
+</body>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="/assets/js/baidu.jquery.min.js"></script>
+<script src="/assets/js/modernizr.js"></script>
+<script src="/assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="/assets/js/amazeui.min.js"></script>
+<script src="/assets/js/doT.js"></script>
+<script src="/auth/js/index.js"></script>
+<script id="articleListTemplate" type="text/x-dot-template">
+    {{ for(var prop in it) { }}
+    <article class="am-g blog-entry-article">
+        <div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-img">
+            <a href="/web/articleInfo/{{= it[prop].id }}"> <img src="{{=it[prop].imgSrc}}" alt="文章图片"
+                                                                class="am-u-sm-12"></a>
+        </div>
+        <div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-text">
+            <span><a href="" class="blog-color">article &nbsp;</a></span>
+            <span> @{{= it[prop].createName }} &nbsp;</span>
+            <span>{{= it[prop].createTime }}</span>
+            <h1><a href="/web/articleInfo/{{= it[prop].id }}">{{= it[prop].title }}</a></h1>
+            <p>{{= it[prop].preface }}
+            </p>
+            <p><a href="" class="blog-continue">continue reading</a></p>
+        </div>
+    </article>
+    {{ } }}
+</script>
+</body>
+</html>
